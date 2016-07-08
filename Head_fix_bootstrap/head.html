@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap-table.css" />
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="bootstrap-table.js"></script>
+<!--<a href="bootstrap-table.js">bootstrap-table.js</a>
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+-->  
+<script>
+ $(document).ready(function(){
+     $('#table').bootstrapTable();
+	 $('.main').width('50%'); // Change table width
+    });
+	
+    $(window).resize(function(){
+   $('#table').bootstrapTable('resetView'); 
+    });
+
+</script>
+</head>
+
+<body><br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="main">
+    <table id="table" data-toggle="table" data-url="/gh/get/response.json/wenzhixin/bootstrap-table/tree/master/docs/data/data1/" data-height="300">
+        <thead>
+        <tr>
+            <th data-field="name">Name</th>
+            <th data-field="stargazers_count">Stars</th>
+            <th data-field="forks_count">Forks</th>
+            <th data-field="description">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tbody><tr data-index="0"><td style="">bootstrap-table</td><td style="">526</td><td style="">122</td><td style="">An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. (supports twitter bootstrap v2 and v3)</td></tr><tr data-index="1"><td style="">multiple-select</td><td style="">288</td><td style="">150</td><td style="">A jQuery plugin to select multiple elements with checkboxes :)</td></tr><tr data-index="2"><td style="">bootstrap-show-password</td><td style="">32</td><td style="">11</td><td style="">Show/hide password plugin for twitter bootstrap.</td></tr><tr data-index="3"><td style="">blog</td><td style="">13</td><td style="">4</td><td style="">my blog</td></tr><tr data-index="4"><td style="">scutech-redmine</td><td style="">6</td><td style="">3</td><td style="">Redmine notification tools for chrome extension.</td></tr></tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
